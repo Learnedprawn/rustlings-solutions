@@ -10,10 +10,14 @@ fn factorial(num: u64) -> u64 {
     // - additional variables
     // For an extra challenge, don't use:
     // - recursion
-}
 
+    let factorial = (1..=num).fold(1, |acc, x| acc * x);
+    factorial
+}
 fn main() {
     // You can optionally experiment here.
+    let hello: Vec<u32> = (0..=100).collect();
+    println!("{:?}", hello);
 }
 
 #[cfg(test)]
