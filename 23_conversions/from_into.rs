@@ -38,7 +38,8 @@ impl From<&str> for Person {
         let splitted_string: Vec<&str> = s.split(",").collect();
         if splitted_string.len() != 2 {
             return Default::default();
-        } else {
+        }
+        {
             let name = splitted_string[0].to_string();
             let age = splitted_string[1].to_string();
             if name == "" || name == " " {
